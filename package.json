@@ -1,0 +1,35 @@
+{
+  "name": "social-media-manager-api",
+  "version": "1.0.0",
+  "description": "Vercel-deployable API for social media manager",
+  "main": "api/index.js",
+  "scripts": {
+    "dev": "vercel dev",
+    "build": "npm run build-client && npm run build-server",
+    "deploy": "vercel --prod",
+    "build-client": "cd client && npm run build",
+    "setup": "npm install && cd client && npm install"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^7.5.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.15.0",
+    "axios": "^1.5.0",
+    "react-hook-form": "^7.45.4",
+    "react-query": "^3.39.3"
+  },
+  "devDependencies": {
+    "@vercel/node": "^3.0.11"
+  },
+  "keywords": [
+    "vercel",
+    "social-media",
+    "marketing",
+    "automation"
+  ],
+  "author": "OpenClaw AI Assistant",
+  "license": "MIT"
+}
